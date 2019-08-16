@@ -4,9 +4,9 @@
 
 
 CREATE TABLE "job_location" (
-    "city" VARCHAR(25)   NOT NULL,
+    "city" VARCHAR(25)   NOT NULL,  -- was null in certain cases
     "state" VARCHAR(25)   NOT NULL,
-    "job_id" VARCHAR(15)   NOT NULL,
+    "job_id" VARCHAR(30)   NOT NULL,  -- value was too long had to redo
     CONSTRAINT "pk_job_location" PRIMARY KEY (
         "job_id"
      )
